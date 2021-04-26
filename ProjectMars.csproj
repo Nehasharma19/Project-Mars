@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Description.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Description.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Language.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Language.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Skills.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Skills.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Certification.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Certification.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Education.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Education.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Description.feature.cs">
+      <DependentUpon>Description.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Language.feature.cs">
+      <DependentUpon>Language.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Skills.feature.cs">
+      <DependentUpon>Skills.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Certification.feature.cs">
+      <DependentUpon>Certification.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Education.feature.cs">
+      <DependentUpon>Education.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
